@@ -6,7 +6,7 @@ This is a Flutter app that I built. It uses github repo APIs to fill UI.
 
 Here is a screenshot of the app:
 
-![Screenshot of the app](./screenshots/1.png)
+<img src="./screenshots/1.png" width="200" />
 
 ## Getting Started
 
