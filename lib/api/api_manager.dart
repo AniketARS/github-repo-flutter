@@ -1,12 +1,13 @@
 import 'dart:convert';
 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:github_repos/model/commit.dart';
 import 'package:github_repos/model/repository.dart';
 import 'package:http/http.dart' as http;
 
 import '../resources/constants.dart';
 
-final headers = {'Authorization': 'Bearer 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'};
+final headers = {'Authorization': 'Bearer ${dotenv.env['GITHUB_TOKEN']}'};
 
 Future<List<Repository>> getRepos() async {
   final response = await http.get(Uri.parse(baseUrl), headers: headers);
